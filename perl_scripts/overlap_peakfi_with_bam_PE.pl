@@ -249,6 +249,10 @@ sub read_bamfi {
 	    $frag_strand = "-";
 	} elsif ($r1sam_flag == 163) {
 	    $frag_strand = "+";
+	} elsif ($r1sam_flag == 99) {
+	    $frag_strand = "+";
+	} elsif ($r1sam_flag == 83) {
+	    $frag_strand = "-";
 	} else {
 	    print STDERR "R1 strand error $r1sam_flag\n";
 	}
